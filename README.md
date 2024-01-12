@@ -1,31 +1,17 @@
-# React + TypeScript + Vite
+# Desafio Github - DevSuperior
+Formação Desenvolvedor Moderno
+Módulo: Front End
+Capítulo: Hooks useSate, useEffect, requisições
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Introdução
+Esse é mais um projeto que serviu para avaliar o aprendizado do uso de Hooks do ReactJS e também de chamadas API usando o cliente [Axios](https://axios-http.com/docs/intro).
 
-Currently, two official plugins are available:
+O projeto é baseado no figma https://www.figma.com/file/igQqM14f9sP17jyo54Y8vL/DesafioGithubAPI no qual é solicitado:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Criar duas páginas com rotas, com navegação entre elas.
+2. Quando buscar um usuário que existe, os dados do usuário devem aparecer (como mostrado no layout do figma acima).
+3. Quando buscar um usuário que não existe, deve aparecer uma mensagem conforme layout.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# Desafio-Github-api
+##Dificuldades que encontrei e como tentei resolver:
+1. O maior desafio foi exibir/ocultar o resultado da consulta à API do Github quando um usuário é encontrado e exibir/ocultar a mensagem de quando o usuário não é encontrado.
+2. Notei que a última letra do "input" não é inserida no useState da variável que usei para armazenar a conta do usuário. Fiz algumas pesquisas e consegui encontrar a resposta no qual deveria usar o useEffect.
