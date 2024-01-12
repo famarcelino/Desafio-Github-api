@@ -1,7 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import Welcome from "./components/Welcome";
+import FindProfile from "./routes/FindProfile";
+
 export default function App() {
   return (
-    <div>
-      <h1>Projeto iniciado</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route index element={<Welcome />} />
+        </Route>
+        <Route path="/profile" element={<FindProfile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

@@ -1,0 +1,14 @@
+.welcome-container {
+    margin-left: 41px;
+}
+
+.welcome-container h1 {
+    font-size: 48px;
+    color: var(--color-font-primary);
+}
+
+.welcome-container p {
+    font-size: 24px;
+    color: var(--color-font-tertiary);
+    letter-spacing: 0.45px;
+}
